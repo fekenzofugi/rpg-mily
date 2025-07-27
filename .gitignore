@@ -1,0 +1,41 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executable and build outputs
+proj
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+bin/
+obj/
+
+# IDE-specific files (Visual Studio, CLion, etc.)
+.vs/
+.idea/
+*.user
+*.sln
+*.vcxproj*
+*.cmake
+CMakeCache.txt
+CMakeFiles/
+
+# Editor temp files
+*~
+*.swp
+*.swo
+
+# Dependency directories (if any)
+deps/
+external/
+
+# macOS files
+.DS_Store
+._*
+
+# Debug files
+*.dSYM/
+core
