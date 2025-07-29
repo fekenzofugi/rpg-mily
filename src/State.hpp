@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include <ctime>
 #include <cstdlib>
 
@@ -14,13 +16,13 @@
 
 class State {
 private:
-  std::vector<sf::Texture> textures;
+    std::vector<sf::Texture> textures;
 public:
-  State();
-  virtual ~State();
+    State();
+    virtual ~State();
 
-  virtual void update() = 0; // pure virtual, need to be defined on the child class
-  virtual void render() = 0;
+    virtual void update() = 0; // pure virtual, need to be defined on the child class
+    virtual void render() = 0;
 };
 
 #endif // STATE_HPP

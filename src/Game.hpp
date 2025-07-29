@@ -1,30 +1,30 @@
 #ifndef GAME_HPP  
 #define GAME_HPP
 
-#include "State.h"
+#include "State.hpp"
 
 class Game {
 private:
-  // Variables 
-  sf::RenderWindow *window;
-  sf::Event sfEvent;
+    // Variables 
+    sf::RenderWindow *window;
+    sf::Event sfEvent;
   
-  sf::Clock dtClock;
-  float dt; // delta time
+    sf::Clock dtClock;
+    float dt; // delta time
   
-  // Initialization
-  void initWindow();
+    // Initialization
+    void initWindow();
 
 public:
-  Game();
-  virtual ~Game();
+    Game();
+    virtual ~Game();
 
-  // Functions
-  void updateDt();
-  void updateSFMLEvents();
-  void update();
-  void render();
-  void run();
+    // Functions
+    void updateDt();
+    void updateSFMLEvents();
+    void update();
+    void render();
+    void run();
 };
 
 #endif // GAME_HPP
