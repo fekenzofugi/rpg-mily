@@ -16,6 +16,11 @@ Game::~Game() {
   delete this->window;
 }
 
+void Game::updateDt() {
+  /*Updates the dt variable with the time it taks to update and render one frame*/
+  this->dt = this->dtClock.restart().asSeconds();
+}
+
 // Functions 
 void Game::updateSFMLEvents() {
   while(this->window->pollEvent(this->sfEvent)) {
@@ -39,6 +44,7 @@ void Game::render() {
 
 void Game::run() {
   while(this->window->isOpen()) {
+    this->updateDt();
     this->update();
     this->render();
   }
